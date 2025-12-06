@@ -36,7 +36,7 @@ export function useClickAnywhere(handler: (event: MouseEvent) => void) {
         return () => {
             document.removeEventListener('click', handler)
         }
-    }, [handler])
+    }, [])
 }
 
 // ============== TEST ==============
