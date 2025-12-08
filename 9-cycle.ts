@@ -22,7 +22,7 @@
 
 // ============== SOLUTION ==============
 
-function cycle<T>(...values: T[]): () => T {
+export function cycle<T>(...values: T[]): () => T {
     if (values.length === 0) {
         throw new Error('cycle requires at least one value')
     }
